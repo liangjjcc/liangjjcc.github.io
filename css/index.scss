@@ -9,7 +9,7 @@ p {
     line-height: 1;
     margin: 0;
 }
-h3,h4,h5 {
+h1,h3,h4,h5 {
     margin: 0;
 }
 // 标签
@@ -21,8 +21,7 @@ h3,h4,h5 {
     margin:  0 auto;
     width: 900px;
     // 标题
-    legend {
-        font-size: 26px;
+    h1 {
         text-align: center;
     }
 }
