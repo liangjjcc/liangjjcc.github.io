@@ -1,0 +1,110 @@
+// 样式初始化
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    line-height: 1;
+    margin: 0;
+}
+h3,h4,h5 {
+    margin: 0;
+}
+// 标签
+.label {
+    padding: 0.3em 0.6em 0.3em;
+}
+
+.resume {
+    margin:  0 auto;
+    width: 900px;
+    // 标题
+    .title {
+        font-size: 26px;
+        text-align: center;
+    }
+}
+
+.resumeBox {
+    display: flex;
+    // 左边
+    .left {
+        width: 300px;
+        background-color: rgb(112, 189, 150);
+        // 照片
+        .userPhoto {
+            padding: 0 10px;
+            margin: 0 auto;
+            height: 180px;
+            width: 150px;
+            background: url(../imgs/user.jpg) no-repeat;
+            background-size: 240px 370px;
+            background-position: -50px -87px;
+            background-clip: content-box;
+        }
+        // 个人信息
+        .userInfo {
+            padding: 0 22px;
+            p {
+                padding: 10px 0;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+        // 自我评价
+        .evaluate {
+            padding: 10px;
+            h4 {
+                margin: 10px 0;
+            }
+            p {
+                line-height: 20px;
+                text-indent: 20px;
+                text-decoration: underline;
+            }
+        }
+        // 技能熟练度
+        .degree {
+            padding: 10px;
+            // 标题
+            h4 {
+                margin-top: 0;
+            }
+        }
+    } //左边^^^
+    // 右边
+    .right {
+        flex: 1;
+        padding: 0 15px;
+        background-color: rgb(205, 248, 248);
+        // 技能特长
+        .skill {
+            padding: 15px 0;
+            p {
+                padding: 5px 0;
+                font-size: 16px;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+        // 工作经验盒子
+        .experienceBox {
+            padding-bottom: 10px;
+            p {
+                padding: 5px 0;
+            }
+        }
+        // 项目经验
+        .project {
+            padding-bottom: 20px;
+            // 标题
+            h4 {
+                padding-top: 15px;
+                padding-bottom: 5px;
+            }
+            p {
+                padding: 5px 0;
+            }
+        }
+    }
+}

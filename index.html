@@ -1,12 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>WEB-前端-梁嘉诚</title>
+    <!-- 引入字Bootstrap标样式文件 -->
+    <link rel="stylesheet" href="./lib/Bootstrap/css/bootstrap.min.css">
+    <!-- 引入css样式文件 -->
+    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    <div>简历</div>
+    <div class="resume">
+        <div class="resumeBox">
+            <!-- 左边个人信息 -->
+            <div class="left">
+                <!-- 照片 -->
+                <div class="userPhoto"></div>
+                <!-- 个人信息 -->
+                <div class="userInfo">
+                    <p>姓名 : 梁嘉诚　年龄 : 24岁</p>
+                    <p>学历 : 大专　　学校 : 广州工商学院</p>
+                    <p>电话 : 139 2213 1990</p>
+                    <p>邮箱 : aa5195320@163.com</p>
+                    <p>籍贯 : 湛江　　现住 : 广州</p>
+                </div>
+                <!-- 自我评价 -->
+                <div class="evaluate">
+                    <h4>自我评价:</h4>
+                    <p>恭喜您获得了一个web前端程序猿，是否收入公司？该程序猿的属性:阳光开朗、积极向上，人帅话不多，开得了玩笑，写得了代码。</p>
+                </div>
+                <!-- 技能熟练度 -->
+                <div class="degree">
+                    <h4>技能熟练度:</h4>
+                    <!-- HTML / Css -->
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span>HTML / Css</span>
+                        </div>
+                    </div>
+                    <!-- js/jq -->
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                            <span>JavaScript / jQuery / 等库相关</span>
+                        </div>
+                    </div>
+                    <!-- Vue -->
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                            <span>Vue等相关...</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 右边工作经验 -->
+            <div class="right">
+                <!-- 技能特长 -->
+                <div class="skill">
+                    <!-- 标题 -->
+                    <span class="label label-danger">技能特长:</span>
+                    <p>1.熟悉HTML/CSS等网页技术，熟练掌握DIV+CSS页面架构和布局方式。</p>
+                    <p>2.熟悉JavaScript 、Ajax、jQuery、zepto.js、Bootstrap框架库等Web相关技术。</p>
+                    <p>3.熟悉HTML5、CSS3相关技术，有实际开发经验。</p>
+                    <p>4.熟悉Vue开发框架。</p>
+                    <p>5.熟悉使用sass编译css;了解less编译。</p>
+                    <p>6.了解git版本控制工具和webpack打包工具。</p>
+                    <p>7.了解node.js与php。</p>
+                </div>
+                <!-- 工作经历 -->
+                <div class="experience">
+                    <!-- 工作经历盒子 -->
+                    <div class="experienceBox">
+                        <!-- 标题 -->
+                        <span class="label label-danger">工作经历:</span>
+                        <table>
+                            <tr>
+                                <td>公司 :&nbsp;</td>
+                                <td>广州唐汉网络科技有限公司</td>
+                            </tr>
+                            <tr>
+                                <td>时间 :&nbsp;</td>
+                                <td>2016年8月-2018年9月</td>
+                                <td>职位 :&nbsp;</td>
+                                <td>WEB前端开发</td>
+                            </tr>
+                        </table>
+                        <h5>职责 :</h5>
+                        <p>1.负责公司PC端与移动项目开发。</p>
+                        <p>2.负责与后台人员配合，完成开发。</p>
+                        <p>3.团队讨论具体功能的细节问题，与其他技术人员沟通并制定设计规范。</p>
+                    </div>
+                        <!--项目经验  -->
+                    <div class="project">
+                        <span class="label label-danger">项目经验:</span>
+                        <div>
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                        data-toggle="tab">项目一</a></li>
+                                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                        data-toggle="tab">项目二</a></li>
+                                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                        data-toggle="tab">项目三</a></li>
+                                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab"
+                                        data-toggle="tab">项目四</a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- 项目一 -->
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <!--标题  -->
+                                    <h4>项目: 力天服饰管理后台</h4>
+                                    <p>开发周期: 2018-05~~2018-08</p>
+                                    <p>项目职责:</p>
+                                    <p>1.使用Vue框架开发,负责登录页面、首页、商品管理、分类管理等页面开发;</p>
+                                    <p>2.运用Element工具，如:文件上传、提交表单、Switch开关等模块，完成项目功能，对数据操作:增删改查;</p>
+                                    <p>3.beforEach路由守卫,进行路由拦截;</p>
+                                    <p>4.Vue.router实现路由跳转等等路由技术开发;</p>
+                                    <p>5.项目中会用到webpack的依赖模块理和打包;</p>
+                                    <p>6.维护后台管理系统功能。</p>
+                                </div>
+                                <!-- 项目二 -->
+                                <div role="tabpanel" class="tab-pane" id="profile">
+                                    <!--标题  -->
+                                    <h4>项目: 海印优选(移动端)</h4>
+                                    <p>开发周期: 开发周期: 2018-02~~2018-05</p>
+                                    <p>项目职责:</p>
+                                    <p>1.使用Vue框架开发，首页、分类、购物车、购物车页面等等的组件编写;</p>
+                                    <p>2.运用mint-ui，完成相应的特效与动态效果;</p>
+                                    <p>3.使用axios请求与后台交互，获取后台数据;</p>
+                                    <p>4.使用Vue +vue.router 等技术开发</p>
+                                    <p>5.对购物车、购物车等页面进行路由拦截，判断是否登录</p>
+                                    <p>6.优化产品界面，为用户提供更好的体验</p>
+                                </div>
+                                <!-- 项目三 -->
+                                <div role="tabpanel" class="tab-pane" id="messages">
+                                    <!--标题  -->
+                                    <h4>项目: 海印优选(pc端)</h4>
+                                    <p>开发周期: 开发周期: 2017-11~~2018-02</p>
+                                    <p>项目职责:</p>
+                                    <p>1.使用html、css实现主页面、登录页面、购物车等等静态编写与布局;</p>
+                                    <p>2.使用jQuery和Swiper等插件与库实现了页面上的相应特效,包括图片的轮播等等;</p>
+                                    <p>3.实现登录、注册、购物车等功能;</p>
+                                    <p>4.使用ajax请求与后台交互;</p>
+                                    <p>5.使用template模版引擎完成数据渲染;</p>
+                                    <p>6.根据UI图纸，实现显示效果;</p>
+                                    <p>7.负责公司安排的其他事物。</p>
+                                </div>
+                                <!-- 项目四 -->
+                                <div role="tabpanel" class="tab-pane" id="settings">
+                                    <!--标题  -->
+                                    <h4>项目: 阳明酒业 (Bootstrap响应式) </h4>
+                                    <p>开发周期: 开发周期: 2017-9~~2017-11</p>
+                                    <p>项目职责:</p>
+                                    <p>1.使用HTML、Css、Bootstrap编写主页面等其它页面;</p>
+                                    <p>2.运用Bootstrap中的全局Css样式、组件、javascript插件，实现页面中需要效果</p>
+                                    <p>3.通过Ajax与后台数据进行交互，与后端工作有效对接;</p>
+                                    <p>4.运用Template模版引擎渲染数据，提高代码可读、写性。</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-1.12.2.min.js"></script>
+    <script src="./lib/Bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
